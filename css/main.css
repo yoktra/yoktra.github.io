@@ -1630,7 +1630,7 @@ header .social-links ul li a:focus {
  *
  * ------------------------------------------------------------------- */
 #cta {
-	background: #034e4a;
+	background: #306bbb;
 	padding-top: 9rem;
 	padding-bottom: 7.8rem;
 	text-align: center;
@@ -1639,12 +1639,10 @@ header .social-links ul li a:focus {
 	color: rgba(255, 255, 255, 0.5);
 }
 #cta .button {
-	background: #02312e;
-	color: #FFFFFF;
+	background: ##FFFFFF ;
+	color: #151515;
 }
-#cta .button:hover {
-	background: #151515;
-}
+
 .cta-wrap {
 	max-width: 670px;
 }
@@ -1803,7 +1801,7 @@ footer .back-to-top {
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	color: #FFFFFF;
+	color: #151515;
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
@@ -1815,15 +1813,12 @@ footer .back-to-top {
 
 footer .back-to-top a {
 	display: block;
-	background: #034e4a;
+	background: #151515;
 	padding: 1.2rem 3rem 1.5rem;
 	color: #FFFFFF;
 }
 
-footer .back-to-top a:hover,
-footer .back-to-top a:focus {
-	background: #151515;
-}
+
 
 footer .back-to-top a i {
 	margin-left: 15px;
