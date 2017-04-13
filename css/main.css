@@ -471,7 +471,7 @@ input[type="password"]:focus,
 textarea:focus,
 select:focus {
 	color: #000000;
-	border-color: #034e4a;
+	border-color: #306bbb;
 }
 label, legend {
 	font-family: "roboto-bold", sans-serif;
@@ -573,7 +573,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #034e4a;
+	background: #306bbb;
 	color: #FFFFFF;
 }
 
