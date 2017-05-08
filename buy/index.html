@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<title>Contact Form | YOKTRA</title>
+</head>
+<body>
+	<form method="POST" action="https://formspree.io/info@yoktra.com" class="cd-form floating-labels">
+		<fieldset>
+			<legend>Contact Info</legend>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-name">Name</label>
+				<input class="user" type="text" name="cd-name" id="cd-name" required>
+		    </div>
+
+		    <div class="icon">
+		    	<label class="cd-label" for="cd-email">Email</label>
+				<input class="email" type="email" name="cd-email" id="cd-email" required>
+		    </div>
+				<div class="icon">
+		    	<label class="cd-label" for="cd-tel">Phone</label>
+				<input class="tel" type="number" name="cd-tel" maxlength="10" pattern="([0-9]|[0-9]|[0-9][0-9]|[0-9]|[0-9][0-9]|[0-9]|[0-9]|[0-9])"id="cd-tel" required>
+		    </div>
+		</fieldset>
+
+		<fieldset>
+			<!-- <legend>Project Info</legend> -->
+
+			<div>
+				<h4>Quantity</h4>
+
+				<p class="cd-select icon">
+					<select class="budget">
+						<option value="0">Select Quantity</option>
+						<option value="1"> 1</option>
+						<option value="2">&gt; 1</option>
+					</select>
+				</p>
+			</div>
+
+			<div class="icon">
+				<label class="cd-label" for="cd-textarea">Description</label>
+      			<textarea class="message" name="cd-textarea" id="cd-textarea"></textarea>
+			</div>
+
+			<div>
+		      	<input type="submit" value="Send Message">
+		    </div>
+		</fieldset>
+	</form>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript">
+$("#cd-tel").keyup(function() {
+    $("#cd-tel").val(this.value.match(/[0-9]*/));
+});
+
+</script>
+</body>
+</html>
